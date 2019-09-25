@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="RestAPI(failed)">
+    <classes>
+      <class name="RestAssured.basic4">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- RestAssured.basic4 -->
+      <class name="RestAssured.basic3">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- RestAssured.basic3 -->
+      <class name="RestAssured.basic5">
+        <methods>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- RestAssured.basic5 -->
+      <class name="RestAssured.excelDriven">
+        <methods>
+          <include name="deleteBookData" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- RestAssured.excelDriven -->
+      <class name="RestAssured.basic2">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- RestAssured.basic2 -->
+      <class name="RestAssured.basic6">
+        <methods>
+          <include name="getData"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- RestAssured.basic6 -->
+      <class name="RestAssured.JiraTestBasic1">
+        <methods>
+          <include name="getData"/>
+          <include name="updateCommentForIssueInJira"/>
+          <include name="createAnIssueInJira"/>
+          <include name="addCommentForIssueInJira"/>
+        </methods>
+      </class> <!-- RestAssured.JiraTestBasic1 -->
+      <class name="RestAssured.Twitter">
+        <methods>
+          <include name="getLatestTweet"/>
+          <include name="deleteTweet"/>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- RestAssured.Twitter -->
+    </classes>
+  </test> <!-- RestAPI(failed) -->
+</suite> <!-- Failed suite [Suite] -->

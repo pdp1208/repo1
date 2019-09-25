@@ -1,0 +1,67 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 21.642 sec <<< FAILURE! - in TestSuite
+Test1(RestAssured.basic5)  Time elapsed: 0.531 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path results[0].name doesn't match.
+Expected: Sydney
+  Actual: null
+
+	at RestAssured.basic5.Test1(basic5.java:33)
+
+test(RestAssured.basic6)  Time elapsed: 0.125 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at RestAssured.basic6.test(basic6.java:42)
+
+deleteBookData(RestAssured.excelDriven)  Time elapsed: 0.233 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at RestAssured.excelDriven.deleteBookData(excelDriven.java:55)
+
+deleteBookData(RestAssured.excelDriven)  Time elapsed: 0.098 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at RestAssured.excelDriven.deleteBookData(excelDriven.java:55)
+
+deleteBookData(RestAssured.excelDriven)  Time elapsed: 0.094 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at RestAssured.excelDriven.deleteBookData(excelDriven.java:55)
+
+addCommentForIssueInJira(RestAssured.JiraTestBasic1)  Time elapsed: 2.037 sec  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at RestAssured.JiraTestBasic1.addCommentForIssueInJira(JiraTestBasic1.java:64)
+
+createAnIssueInJira(RestAssured.JiraTestBasic1)  Time elapsed: 2.031 sec  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at RestAssured.JiraTestBasic1.createAnIssueInJira(JiraTestBasic1.java:40)
+
+updateCommentForIssueInJira(RestAssured.JiraTestBasic1)  Time elapsed: 2.049 sec  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at RestAssured.JiraTestBasic1.updateCommentForIssueInJira(JiraTestBasic1.java:84)
+
+deleteTweet(RestAssured.Twitter)  Time elapsed: 0.047 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/github/scribejava/core/model/Token
+	at RestAssured.Twitter.postNewTweet(Twitter.java:56)
+	at RestAssured.Twitter.deleteTweet(Twitter.java:69)
+Caused by: java.lang.ClassNotFoundException: com.github.scribejava.core.model.Token
+	at RestAssured.Twitter.postNewTweet(Twitter.java:56)
+	at RestAssured.Twitter.deleteTweet(Twitter.java:69)
+
+getLatestTweet(RestAssured.Twitter)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/github/scribejava/core/model/Token
+	at RestAssured.Twitter.getLatestTweet(Twitter.java:39)
+Caused by: java.lang.ClassNotFoundException: com.github.scribejava.core.model.Token
+	at RestAssured.Twitter.getLatestTweet(Twitter.java:39)
+
