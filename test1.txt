@@ -1,10 +1,1 @@
- Volume in drive F is New Volume
- Volume Serial Number is EC79-5C5D
-
- Directory of F:\GitMyProject
-
-26-09-2019  01:05    <DIR>          .
-26-09-2019  01:05    <DIR>          ..
-26-09-2019  01:05                 0 test1.txt
-               1 File(s)              0 bytes
-               2 Dir(s)  52,119,273,472 bytes free
+ABCD
